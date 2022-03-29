@@ -1,8 +1,8 @@
 import socket
 import struct
-#x /48wx 0xf7dcc2a0
-srv_ADDR = '127.0.0.1'
-srv_PORT = int(7777)
+
+srv_ADDR = '127.0.0.1' # change to target IP
+srv_PORT = int(7777) # change to target port
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((srv_ADDR, srv_PORT))
